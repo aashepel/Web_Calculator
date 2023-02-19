@@ -16,6 +16,9 @@ window.onload = function(){
     function onDigitButtonClicked(digit) {
         if (!selectedOperation)
         {
+            if (a.length >= 16)
+                return;
+
             if (digit == '0' && a == '0')
             {
                 return
@@ -31,6 +34,9 @@ window.onload = function(){
         }
         else
         {
+            if (b.length >= 16)
+                return;
+
             if (digit == '0' && b == '0')
             {
                 return
